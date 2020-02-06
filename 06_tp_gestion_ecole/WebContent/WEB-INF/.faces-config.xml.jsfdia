@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#accueilSite.xhtml" PATH="/accueilSite.xhtml"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#accueilSite.xhtml:0" NAME="item"
+   PATH="/accueilSite.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="navAccueilAdmin::#accueilAdministrateur.xhtml" NAME="output"
+    PATH="/accueilAdministrateur.xhtml"
+    TARGET="rules:#accueilAdministrateur.xhtml" TITLE="navAccueilAdmin" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="navAccueilEnseignant::#accueilEnseignant.xhtml" NAME="output1"
+    PATH="/accueilEnseignant.xhtml"
+    TARGET="rules:#accueilEnseignant.xhtml" TITLE="navAccueilEnseignant" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="navAccueilEtudiant::#accueilEtudiant.xhtml"
+    NAME="output2" PATH="/accueilEtudiant.xhtml"
+    TARGET="rules:#accueilEtudiant.xhtml" TITLE="navAccueilEtudiant" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#accueilAdministrateur.xhtml"
+  PATH="/accueilAdministrateur.xhtml" SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#accueilEtudiant.xhtml"
+  PATH="/accueilEtudiant.xhtml" SHAPE="272,321,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#accueilEnseignant.xhtml"
+  PATH="/accueilEnseignant.xhtml" SHAPE="272,209,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

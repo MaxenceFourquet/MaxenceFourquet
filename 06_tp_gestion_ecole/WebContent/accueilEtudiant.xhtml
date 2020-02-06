@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Page d'accueil etudiant</title>
+</h:head>
+<body>
+	<h:form>
+		<p:growl id="growl" life="2000" />
+
+		<p:commandButton value="Consulter la liste des cours" id="listeCours" update="growl"
+			action="#{navBean.navVersAccueilEtudiant()}"
+			style="margin-right:20px;" styleClass="ui-priority-primary" />
+
+		<p:commandButton value="Consulter ses absences" id="listeAbscences" update="growl"
+			action="#{buttonView.buttonAction}" style="margin-right:20px;"
+			styleClass="ui-priority-primary" />
+
+		<h:dataTable>
+		
+		</h:dataTable>
+			
+			
+	</h:form>
+</body>
+</html>

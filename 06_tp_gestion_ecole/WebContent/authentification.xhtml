@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>page d'authentification</title>
+	<h:outputStylesheet library="style" name="style.css"/>
+</h:head>
+
+<body>
+
+	<h:form>
+		<h:panelGrid columns="3" cellpadding="1" cellspacing="2">
+
+			<f:facet name="header">
+				Formulaire de connexion 
+			</f:facet>
+			<h:outputLabel value="Identifiant : " />
+			<h:inputText id="userId" value="#{authentificationBean.identifiant}" required="" 
+				requiredMessage="Identifiant obligatoire" />
+			<h:message for="userId" styleClass="error" />
+
+
+			<h:outputLabel value="mot de passe : " />
+			<h:inputSecret id="userMdp" value="#{authentificationBean.motDePasse}" required=""
+				requiredMessage="Mot de passe obligatoire" />
+			<h:message for="userMdp" styleClass="error" />
+
+			<f:facet name="footer">
+				<h:commandButton value="Se connecter" action="#{authentificationBean.connecterUtilisateur()}"/>
+			</f:facet>
+
+		</h:panelGrid>
+
+	</h:form>
+		<h:link value="Retour vers la page d'accueil" outcome="index.xhtml"/>
+</body>
+</html>
