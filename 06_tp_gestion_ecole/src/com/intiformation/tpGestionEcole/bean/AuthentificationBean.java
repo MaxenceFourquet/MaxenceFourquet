@@ -55,10 +55,10 @@ public class AuthentificationBean implements Serializable {
 		if (etudiantServiceImpl.isUtilisateurExist(identifiant, motDePasse)) {
 			// => user exists
 			// => 1.2.création de la session utilisateur
-			HttpSession session1 = SessionUtil.getUserSession();
+			HttpSession session5 = SessionUtil.getUserSession();
 
 			// 1.2.1. sauvegarde du login dans la session
-			session1.setAttribute("user_login", identifiant);
+			session5.setAttribute("user_login", identifiant);
 
 			// 1.3. renvoi de la page de redirection
 			return "accueilEtudiant.xhtml";
